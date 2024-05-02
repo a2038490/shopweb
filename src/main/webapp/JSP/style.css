@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+body{
+	text-align:center;
+	background-color:#F0FFF0;
+	flow:center;
+}
+
+#header{
+	width:100%;
+	height:15px;
+	float:right;
+	font-size:10px;
+	text-align:right;
+}
+
+#menu{
+	width:100%;
+	height:50px;
+	font-size:18px;
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+#menu ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:auto;
+	background:#6f6f6f;
+}
+
+#menu ul li{
+	float:left;
+}
+
+#menu ul li a{
+	display:block;
+	float:left;
+	height:50px;
+	width:150px;
+	text-align:center;
+	color:#FFF;
+	text-decoration:none;
+	line-height:50px;
+}
+.wrap{
+	weight:900px;
+	margin:50px auto 0;
+	padding:0;
+}
+.sitebar{
+	height:300px;
+	width:200px;
+	float:left;
+}
+.sitebar img{
+	object-fit:contain;
+	height:100%;
+	width:100%;
+}
+.bodybar{
+	height:300px;
+	width:700px;
+	text-align:left;
+	float:left;
+}
+.clear{
+	clear:both;
+}
+.body{
+	height:50%
+}
+.footer{
+	height:100px;
+	text-align:left;
+	font-size:10px;
+	margin-left:45%;
+}
+.box{
+	display:grid;
+	grid-template-columns:repeat(4,1fr);
+	grid-auto-rows:100px;
+}
+.boxwrap{
+	margin:0 auto;
+}
+.boxheader{
+	height:70px;
+}
+.boxheader img{
+	object-fit:contain;
+	height:100%;
+	width:100%;
+}
+.boxbody{
+	height:30px;
+	text-align:left;
+}
+.slideshow{
+	positon:relative;
+	transition:2s;
+	user-select:none;
+}
+.slideitem{
+	display:none;
+	position:relative;
+	overflow:hidden;
+}
+.slideitem img{
+	object-fit:contain;
+	width:30%;
+	height:30%;
+	vertical-align:middle;
+	transition:0.5s;
+}
+
+.slidearraw{
+	padding:50px;
+	position:absolute;
+	line-height:50px;
+	font-size:50px;
+	text-decoration:none;
+	color:black;
+}
+.slidearraw:hover{
+	background:rgba(0,0,0,0.7);
+	border-radius:5px;
+	color:white;
+	cursor:pointer;
+	transition:0.6ease;
+}
+.slidearrawprev{
+	position:absolute;
+	top:50%;
+	left:20%;
+	transform:translateY(-50%);
+}
+.slidearrawnext{
+	position:absolute;
+	top:50%;
+	right:20%;
+	transform:translateY(-50%);
+}
+.fades{
+	animation:1.5s fades;
+}
+@keyframes fades{
+	from{
+		opacity:0.4;
+	}
+	to{
+		opacity:1;
+	}
+}

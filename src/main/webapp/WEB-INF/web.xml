@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+ <display-name>ShopWeb1</display-name>
+  <welcome-file-list>
+    <welcome-file>Main.html</welcome-file>
+    <welcome-file>Main.jsp</welcome-file>
+    <welcome-file>Main.htm</welcome-file>
+  </welcome-file-list>
+  
+ <servlet>
+	<servlet-name>ProductServlet</servlet-name>
+	<servlet-class>Servlet.ProductServlet</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>ProductServlet</servlet-name>
+	<url-pattern>/productservlet</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+	<servlet-name>AddCartServlet</servlet-name>
+	<servlet-class>Servlet.AddCartServlet</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>AddCartServlet</servlet-name>
+	<url-pattern>/addcartservlet</url-pattern>
+ </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>ClearCart</servlet-name>
+	<servlet-class>Servlet.ClearCart</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>ClearCart</servlet-name>
+	<url-pattern>/clearcartservlet</url-pattern>
+ </servlet-mapping>
+  
+   <servlet>
+	<servlet-name>DeleteCartServlet</servlet-name>
+	<servlet-class>Servlet.DeleteCartServlet</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>DeleteCartServlet</servlet-name>
+	<url-pattern>/deletecartservlet</url-pattern>
+ </servlet-mapping> 
+  
+     <servlet>
+	<servlet-name>Login</servlet-name>
+	<servlet-class>Servlet.Login</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>Login</servlet-name>
+	<url-pattern>/loginservlet</url-pattern>
+ </servlet-mapping>
+
+<servlet>
+	<servlet-name>Logout</servlet-name>
+	<servlet-class>Servlet.Logout</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>Logout</servlet-name>
+	<url-pattern>/logoutservlet</url-pattern>
+ </servlet-mapping>
+
+<servlet>
+	<servlet-name>Register</servlet-name>
+	<servlet-class>Servlet.Register</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>Register</servlet-name>
+	<url-pattern>/registerservlet</url-pattern>
+ </servlet-mapping>
+
+<servlet>
+	<servlet-name>Update</servlet-name>
+	<servlet-class>Servlet.Update</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>Update</servlet-name>
+	<url-pattern>/updateservlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	<servlet-name>CartServlet</servlet-name>
+	<servlet-class>Servlet.CartServlet</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>CartServlet</servlet-name>
+	<url-pattern>/CartServlet</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+	<servlet-name>checkoutservlet</servlet-name>
+	<servlet-class>Servlet.checkoutservlet</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+	<servlet-name>checkoutservlet</servlet-name>
+	<url-pattern>/checkoutservlet</url-pattern>
+ </servlet-mapping>
+
+</web-app>
