@@ -19,26 +19,12 @@ if(u==null)
 
 <h1>會員資料</h1><br>
 <hr width="40%" size="5">
-<br><br>
-<table width="50%" height="100" border="0">
-<tr align="left">
-<td>會員帳號 :</td>
-<td><%=u.getUsername() %></td>
-</tr>
-<tr align="left">
-<td>會員密碼 :</td>
-<td><%=u.getPassword() %></td>
-</tr>
-<tr align="left">
-<td>會員姓名 :</td>
-<td><%=u.getName() %></td>
-</tr>
-<tr align="left">
-<td>會員電話 :</td>
-<td><%=u.getPhone() %></td>
-</tr>
-
+<br>
+<p>會員帳號 :  <%=u.getUsername() %></p>
+<p>會員密碼 :  <%=u.getPassword() %></p>
+<p>會員姓名 :  <%=u.getName() %></p>
+<p>會員電話 :  <%=u.getPhone() %></p>
+<br>
 <a href="<%=request.getContextPath() %>/JSP/Updateuser.jsp">編輯會員資料</a>
-
 </body>
 </html>

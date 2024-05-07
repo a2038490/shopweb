@@ -64,12 +64,12 @@ public class AllInOne extends AllInOneBase{
 	public AllInOne(String log4jPropertiesPath){
 		super();
 		if(log4jPropertiesPath != "" && log4jPropertiesPath != null){
-			String propertiesFile = log4jPropertiesPath + "/log4j2.xml";
+			String propertiesFile = log4jPropertiesPath + "/log4j.xml";
 			
 			if(log4jPropertiesPath.substring(log4jPropertiesPath.length()-1) == "/")
-				propertiesFile = propertiesFile + "log4j2.properties";
+				propertiesFile = propertiesFile + "log4j.properties";
 			else
-				propertiesFile = propertiesFile + "/log4j2.properties";
+				propertiesFile = propertiesFile + "/log4j.properties";
 			
 			try {
 				LoggerContext logContext = (LoggerContext) LogManager.getContext(false);
@@ -224,7 +224,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * 下載會員對帳媒體檔的方法
+	 * 下載賣家會員對帳媒體檔的方法
 	 * @param tradeNoAioObj
 	 * @return response string
 	 */

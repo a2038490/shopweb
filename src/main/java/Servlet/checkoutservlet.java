@@ -65,7 +65,7 @@ public class checkoutservlet extends HttpServlet{
 		obj.setItemName("test");
 		obj.setTradeDesc("test");
 		obj.setReturnURL("a");
-		obj.setOrderResultURL("http://localhost:8080/ShopWeb/clearcartservlet");
+		obj.setOrderResultURL("http://localhost:8080/shopweb/clearcartservlet");
 		obj.setNeedExtraPaidInfo("N");
 		user u=(user)session.getAttribute("user");
 		order o=new order(tradeno,u.getUsername(),name,phone,address,item,date,stotal);
@@ -73,6 +73,7 @@ public class checkoutservlet extends HttpServlet{
 		String sessionid=session.getId();
 		Cookie cookie=new Cookie("JSESSIONID",sessionid);
 		cookie.setMaxAge(3600);
+		//cookie.setHttpOnly(false);
 		response.addCookie(cookie);
 		String form=all.aioCheckOut(obj, null);
 		System.out.println("cookie: "+cookie);

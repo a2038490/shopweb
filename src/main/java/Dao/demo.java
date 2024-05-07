@@ -1,7 +1,8 @@
 package Dao;
 
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.LoggerContext;
 import java.io.File;
 import java.text.SimpleDateFormat;
 
@@ -9,10 +10,10 @@ import ecpay.payment.integration.AllInOne;
 import ecpay.payment.integration.domain.AioCheckOutALL;
 
 public class demo {
-//	public static final Logger logger=LogManager.getLogger(demo.class);
+	public static final Logger logger=LogManager.getLogger(demo.class);
 	public static AllInOne all;
 	public static void main(String[] args) {
-		/*String filePath="D:\\java\\ShopWeb\\log";
+		String filePath="C:\\Users\\user\\eclipse-workspace\\log4j";
 		File file = new File(filePath);
 		if(file.exists())
 		{
@@ -23,7 +24,7 @@ public class demo {
 		{
 			System.out.println("檔案或目錄不存在");
 		}
-		logger.debug("This is a debug message");*/
+		logger.debug("This is a debug message");
 		all=new AllInOne("");
 		System.out.println(getAioCheckOutAll());
 		

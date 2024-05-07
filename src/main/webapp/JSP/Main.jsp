@@ -58,19 +58,19 @@
 	<div class="body">
 		<div class="slideshow">
 			<div class="slideitem fades">
-			<img border="0" src="<%=request.getContextPath() %>/JSP/banana.jpg">
+			<img border="0" src="<%=request.getContextPath() %>/JSP/banana.png">
 			</div>
 			<div class="slideitem fades">
-			<img border="0" src="<%=request.getContextPath() %>/JSP/inca.jpg">
+			<img border="0" src="<%=request.getContextPath() %>/JSP/apple.png">
 			</div>
 			<div class="slideitem fades">
-			<img border="0" src="<%=request.getContextPath() %>/JSP/inca oil.jpg">
+			<img border="0" src="<%=request.getContextPath() %>/JSP/blackberry.png">
 			</div>
 			<div class="slideitem fades">
-			<img border="0" src="<%=request.getContextPath() %>/JSP/sugar.jpg">
+			<img border="0" src="<%=request.getContextPath() %>/JSP/orange.png">
 			</div>
 			<div class="slideitem fades">
-			<img border="0" src="<%=request.getContextPath() %>/JSP/sugar juice.jpg">
+			<img border="0" src="<%=request.getContextPath() %>/JSP/watermelon.png">
 			</div>
 			<a id="prev" class="slidearraw slidearrawprev">《</a>
 			<a id="next" class="slidearraw slidearrawnext">》</a>

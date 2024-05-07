@@ -23,7 +23,7 @@ public class OrderDao {
 		{
 			db=new SimpleDBSource();
 			con=db.getConnection();
-			String str="select * from `order` where username=?";
+			String str="select * from `order` where username=? order by date desc";
 			ps=con.prepareStatement(str);
 			ps.setString(1, username);
 			ResultSet rs=ps.executeQuery();

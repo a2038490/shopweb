@@ -14,8 +14,8 @@
 <body>
 <h1>購物車清單</h1><br>
 <hr width="40%" size="5">
-<br><br>
-<table width="60%" height="100" border="0">
+<br>
+<table width="60%" height="100" border="0" style="margin-left:250px;">
 <%
 	int total=0;
 	HashMap<product,Integer> cart=(HashMap<product,Integer>)session.getAttribute("cart");

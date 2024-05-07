@@ -16,19 +16,12 @@ ProductDao pd=new ProductDao();
 String id=(String)request.getParameter("id");
 product p =pd.findByID(id);
 %>
-<div class="wrap">
-	<div class="sitebar">
-	<!--  <img border="0" src=<%=p.getPicture() %>>-->
-	</div>
-	<div class="bodybar">
-	<p><font size="5">商品名稱: <%=p.getName() %></font></p>
-	<p><font size="5">商品價格: <%=p.getPrice() %></font></p>
-	<p><font size="3">商品介紹: <%=p.getDescribe() %></font></p>
-	</div>
-	<div class="clearfix"></div>
-	<div class="footer">
+<figure id="product">
+	<img alt="The picture is error." src="<%=request.getContextPath()+"/"+p.getPicture() %>">
+	<figcaption>商品名稱: <%=p.getName() %></figcaption>
+	<figcaption>商品價格: <%=p.getPrice() %></figcaption>
+	<figcaption>商品介紹: <%=p.getDescribe() %></figcaption>
 	<a href="<%=request.getContextPath() %>/JSP/addCart.jsp?id=<%=p.getId()%>">加入購物車</a>
-	</div>
-</div>
+	</figure>
 </body>
 </html>
